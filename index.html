@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal Escolar - Primaria 24 de Febrero</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+    }
+    body {
+      background: linear-gradient(145deg, #f0f2f5, #d8dde3);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .card {
+      background: #ffffff;
+      border-radius: 20px;
+      max-width: 440px;
+      width: 100%;
+      padding: 30px 22px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      text-align: center;
+      border-top: 6px solid #8B1E3F; /* Tono guinda institucional */
+    }
+    .logo-container {
+      margin-bottom: 14px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .school-logo {
+      max-width: 95px;
+      max-height: 95px;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      border-radius: 8px;
+    }
+    .badge {
+      display: inline-block;
+      background: #edf2f7;
+      color: #4a5568;
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 5px 12px;
+      border-radius: 50px;
+      margin-bottom: 12px;
+      letter-spacing: 0.5px;
+      border: 1px solid #e2e8f0;
+    }
+    h1 {
+      font-size: 1.35rem;
+      color: #1a202c;
+      margin-bottom: 5px;
+      line-height: 1.3;
+    }
+    p.subtitle {
+      font-size: 0.92rem;
+      color: #718096;
+      margin-bottom: 22px;
+    }
+    .btn-container {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 15px 18px;
+      font-size: 0.98rem;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 12px;
+      transition: all 0.25s ease;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+    }
+    /* Botón Ubicación: Gris carbón */
+    .btn-ubicacion {
+      background-color: #4a5568;
+      color: #ffffff;
+    }
+    .btn-ubicacion:hover {
+      background-color: #2d3748;
+      transform: translateY(-2px);
+    }
+    /* Botón Carta: Guinda oficial */
+    .btn-carta {
+      background-color: #8B1E3F;
+      color: #ffffff;
+    }
+    .btn-carta:hover {
+      background-color: #6e1530;
+      transform: translateY(-2px);
+    }
+    .info-box {
+      margin-top: 22px;
+      padding-top: 16px;
+      border-top: 1px dashed #cbd5e0;
+      text-align: center;
+      font-size: 0.84rem;
+      color: #4a5568;
+      line-height: 1.5;
+    }
+    .info-box strong {
+      color: #2d3748;
+    }
+    .icon {
+      width: 22px;
+      height: 22px;
+      fill: currentColor;
+      flex-shrink: 0;
+    }
+    footer {
+      margin-top: 20px;
+      font-size: 0.74rem;
+      color: #a0aec0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <!-- Logotipo Institucional -->
+    <div class="logo-container">
+      <img src="logo.png" alt="Logotipo Escuela Primaria 24 de Febrero" class="school-logo">
+    </div>
+
+    <div class="badge">C.C.T. 15EPR1310I</div>
+    <h1>Escuela Primaria<br>“24 de Febrero”</h1>
+    <p class="subtitle">Turno Matutino | Portal de Enlaces Rápidos</p>
+
+    <div class="btn-container">
+      <!-- Botón Ubicación -->
+      <a class="btn btn-ubicacion" 
+         href="https://www.google.com/maps/search/?api=1&query=Escuela+Primaria+24+de+Febrero+Andador+Fuente+del+Deseo+No.+10+Fuentes+de+San+Cristobal+Ecatepec+de+Morelos" 
+         target="_blank" rel="noopener noreferrer">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        Ver Ubicación en Maps
+      </a>
+
+      <!-- Botón Carta de Corresponsabilidad -->
+      <a class="btn btn-carta" 
+         href="https://drive.google.com/file/d/1hrEqRZ4bn6Ao83oilqWiUdCaKR20YndN/view?usp=drivesdk" 
+         target="_blank" rel="noopener noreferrer">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+        Carta de Corresponsabilidad (PDF)
+      </a>
+    </div>
+
+    <!-- Dirección del plantel -->
+    <div class="info-box">
+      <strong>Dirección del Plantel:</strong><br>
+      Andador Fuente del Deseo No. 10, Col. Fuentes de San Cristóbal, C.P. 55040, Ecatepec de Morelos, Estado de México.
+    </div>
+
+    <footer>
+      Comunidad Escolar • Convivencia Armónica
+    </footer>
+  </div>
+
+</body>
+</html>
